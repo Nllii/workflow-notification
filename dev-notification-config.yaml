@@ -1,11 +1,3 @@
-# workflow-notification
-script  i use to send notification and logs  to email, groupme and siasky.
-
-
-
-config file
-```
-
 notifications:
   - groupme:
       bot_id: ""
@@ -17,14 +9,4 @@ notifications:
       smtp_username: ""
       smtp_password: ""
       smtp_tls: true
-
-```
-
-# Usage
-```
-```
-
-
-
-
-
+      subject: "hello from {{program.notifications}}"
