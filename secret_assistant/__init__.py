@@ -88,11 +88,12 @@ class notification:
         return self
 
 
-    def _reply(self):
-        print(f"configfile returned {self.config}... please check your path and make sure the keys and valus are as expected.")
+    # def _reply(self):
+    #     print(f"configfile returned {self.config}... please check your path and make sure the keys and values are as expected.")
         # return self
 
     def info(self):
+
         print(f"{BOLD}{self.message}{ENDC}")
         return self
 
