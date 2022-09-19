@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="workflow-notification",
-    version="2.09.19.2022",
+    version="3.09.19.2022",
     author="Nii Golightly",
     author_email="nlli@pm.me",
     description="workflow-notification ",

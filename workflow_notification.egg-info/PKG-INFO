@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: workflow-notification
-Version: 1.9.19.2022
+Version: 3.9.19.2022
 Summary: workflow-notification 
 Home-page: https://github.com/Nllii/workflow-notification.git
 Author: Nii Golightly
@@ -13,7 +13,7 @@ Classifier: Operating System :: OS Independent
 Description-Content-Type: text/markdown
 
 # workflow-notification
-script  i use to send notification and logs  to email, groupme and siasky.
+used to send notification and logs  to email, groupme and siasky.
 
 ```
 
@@ -34,18 +34,23 @@ notifications:
 
 # Usage
 ```
-'''bash
 pip install workflow-notification
+
 ```
 
 
-'''python
-from secret_assistant import notification
+'''
 
+from secret_assistant import notification
 notification("critical - message").critical().sendmessage().send_mail()
 
+
 ```
 
+
+TODO:
+1. siasky for logs sending
+2. use trace to hook into stdout.
 
 
 

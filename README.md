@@ -26,9 +26,10 @@ pip install workflow-notification
 
 
 '''
-from secret_assistant import notification
 
+from secret_assistant import notification
 notification("critical - message").critical().sendmessage().send_mail()
+
 
 ```
 
