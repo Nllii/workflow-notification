@@ -24,14 +24,12 @@ pip install workflow-notification
 
 ```
 
-
-'''
-
+```python
 from secret_assistant import notification
 notification("critical - message").critical().sendmessage().send_mail()
 
-
 ```
+
 
 
 TODO:
