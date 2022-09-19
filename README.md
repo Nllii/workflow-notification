@@ -1,9 +1,6 @@
 # workflow-notification
-script  i use to send notification and logs  to email, groupme and siasky.
+used to send notification and logs  to email, groupme and siasky.
 
-
-
-config file
 ```
 
 notifications:
@@ -17,13 +14,28 @@ notifications:
       smtp_username: ""
       smtp_password: ""
       smtp_tls: true
+      subject: "hello from {{program.notifications}}"
 
 ```
 
 # Usage
 ```
+pip install workflow-notification
+
 ```
 
+
+'''
+from secret_assistant import notification
+
+notification("critical - message").critical().sendmessage().send_mail()
+
+```
+
+
+TODO:
+1. siasky for logs sending
+2. use trace to hook into stdout.
 
 
 
