@@ -36,12 +36,12 @@ def config(getFile):
 
 
 class notification:
-    # using the logger module... is just too complicated.
+    # using the logger module... is just too complicated.Not worth the effort and time.
     def __init__(self,message=None,file=None):
         self.message = message
         self.config = file if  file != None else config('dev.notification.yaml')
         if self.config is None or False:
-              print(f"{FAIL} - configfile returned {self.config}... please check your path and make sure the keys and values are as expected. {ENDC}")
+            print(f"{FAIL} - configfile returned {self.config}... please check your path and make sure the keys and values are as expected. {ENDC}")
 
 
     def send_mail(self):
@@ -93,7 +93,6 @@ class notification:
         # return self
 
     def info(self):
-
         print(f"{BOLD}{self.message}{ENDC}")
         return self
 
