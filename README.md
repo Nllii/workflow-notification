@@ -2,12 +2,7 @@
 used to send notification and logs  to email, groupme and... ~~siasky~~.
 
 ```
-
-
 create a file called dev.notification.yaml and include the required variables
-
-```yaml
-
 notifications:
   - groupme:
       bot_id: ""
