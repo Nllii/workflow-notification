@@ -37,7 +37,8 @@ notification("testing notifications").critical().sendmessage().send_mail()
 
 TODO:
 1. siasky for logs sending
-2. use trace to hook into stdout for logging .
+~~2. use trace to hook into stdout for logging .~~
+3. Don't wait on message to send - fire and forget/queue. Need to rewrite code in a different way, rust or go.
 
 
 
