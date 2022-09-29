@@ -1,6 +1,5 @@
 .pytest_cache
 __pycache__
-dev.notification.yaml
 .gitignore
 _setup.py
 _testscript.py
